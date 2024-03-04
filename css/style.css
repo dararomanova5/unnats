@@ -70,10 +70,10 @@ img.background {
 
 .animal-description{
     position: absolute;
-    top: 50%;
-    left: 65px;
+    top: 40%;
+    left: 40px;
     color: white;
-    width: 350px;
+    width: 340px;
     background: #00000094;
     padding: 20px;
 }
@@ -423,6 +423,7 @@ section h1{
     flex-wrap: wrap;
     justify-content: space-between;
     gap:50px;
+    align-items: center;
 }
 .pupil{
     height:200px;
@@ -581,10 +582,18 @@ ul{
     width: 50%;
     margin-bottom: 30px;
 }
+.animal-description{
+    position: static;
+    width:100%;
+}
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
+}
+.animal-description{
+    position: static;
+    width:100%;
 }
 }
 /**/
@@ -599,4 +608,52 @@ ul{
     padding:20px;
     border-radius: 100px;
     font-weight: bold;
+}
+.animals button:hover{
+    color:#000;
+    background-color: #cefd14;
+    transform: 3;
+    transition:1s
+}
+.plants img{
+    filter: blur(2px);
+
+}
+.plants{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+
+.soc-l{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    justify-content: center;
+    padding: 50px;
+   
+}
+
+.hrefs{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    font-size: 15pt;
+    justify-content: center;
+}
+
+.gallery{
+    display: flex;
+    padding-top: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+
+}
+
+.gallery img{
+    border-radius: 10px;
 }
